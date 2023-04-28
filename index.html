@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_17</title>
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+
+<style>
+    body, input, select, button{
+        background-color: aliceblue;
+    }
+    h2,
+    h4 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    .borders {
+        border: 1px solid black;
+    }
+    button{
+        border: 1px solid rgb(93, 86, 86);
+    }
+    input{
+        border: 1px solid;
+    }
+    label, option, span, select, input{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    button{
+        font-family:serif;
+    }
+</style>
+
+<body>
+
+    <section class="text-center">
+        <h2 class="p-2">JavaScript Chapters 82 - 89</h2>
+        <h2>Form Validation - Try, Catch and Throw</h2>
+        <hr>
+    </section>
+
+    <section>
+        <div class="text-center p-3">
+            <h4>Form1: Text Field</h4>
+        </div>
+        <div class="container w-75">
+            <div class="row">
+                <div class="col borders p-3">
+                    <form action="submit.html" onsubmit="return checkForLastName()">
+                        <label for="lastNameField">Please Enter your Last Name:</label>
+                        <br> <input type="text" id="lastNameField">
+                        <button>Submit Form</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="text-center p-3">
+            <h4>Form2: Drop Down</h4>
+        </div>
+        <div class="container w-75">
+            <div class="row">
+                <div class="col borders p-3">
+                    <form action="submit.html" onsubmit="return checkForSelection()">
+                        <select name="" id="selects">
+                            <option value="" selected>SELECT A STATE</option>
+                            <option value="A1">Alabama</option>
+                            <option value="A2">Alaska</option>
+                            <option value="A3">Arizona</option>
+                            <option value="A4">Arkansas</option>
+                        </select>
+                        <button>Submit Form</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="text-center p-3">
+            <h4>Form3: Radio Button</h4>
+        </div>
+        <div class="container w-75">
+            <div class="row">
+                <div class="col borders p-3">
+                    <form action="submit.html" onsubmit="return checkRadio()">
+                        <label for="radios">Select your pet</label>
+                        <br> <input id="radios" type="radio" name="r1" value="Cat"> <span>Cat</span>
+                        <br> <input type="radio" name="r1" value="Dog"> <span>Dog</span>
+                        <br> <input type="radio" name="r1" value="Hen"> <span>Hen</span>
+                        <br> <button class="m-2">Submit Form</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="text-center p-3">
+            <h4>Form4: Email Field</h4>
+        </div>
+        <div class="container w-75">
+            <div class="row">
+                <div class="col borders p-3">
+                    <form action="submit.html" onsubmit="return checkEmail()">
+                        <label for="mail">Please Enter your Email</label>
+                        <br> <input type="email" id="mail">
+                        <button>Submit Form</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="text-center p-3">
+            <h4>Form5: Password Field</h4>
+        </div>
+        <div class="container w-75">
+            <div class="row">
+                <div class="col borders p-3">
+                    <form action="submit.html" onsubmit="return checkPassword()">
+                        <label for="password">Enter a password</label>
+                        <br> <label for="password">(8 - 12 characters, no spaces)</label>
+                        <br> <input id="password" type="text">
+                        <button>Submit Form</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> <br>
+
+    <script src="js/script.js"></script>
+
+    <!-- bootstrap link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
